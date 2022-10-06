@@ -4,7 +4,7 @@ The objective of this project is to provide a solution to query the data to dete
 
 ## General Architecture
 
-![alt text](https://postimg.cc/64vhCL7D)
+![api-spacex (2)](https://user-images.githubusercontent.com/27025854/194405263-fa52216d-75e9-4fb0-8c74-3ab1de8b004c.png)
 
 ## Folders
 
