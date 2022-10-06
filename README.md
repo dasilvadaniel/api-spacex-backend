@@ -29,6 +29,7 @@ API to get the last known latitude/longitude of the satellite for a given time:
 Endpoit:
 https://fi4k7gwr01.execute-api.us-east-2.amazonaws.com/starlink/satelliteposition
 
+Body:
 ``` 
 {
   "date": "2021-01-26",
@@ -51,6 +52,7 @@ API to find the closest satellite at a given time T, and a given a position on a
 Endpoit:
 https://fi4k7gwr01.execute-api.us-east-2.amazonaws.com/starlink/satelliteclosest
 
+Body:
 ```
 {
   "date": "2021-01-26",
