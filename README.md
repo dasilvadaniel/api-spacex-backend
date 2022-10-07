@@ -21,10 +21,10 @@ The objective of this project is to provide a solution to query the data to dete
 
 ## Getting started
 
-To use this API you just need to send a POST request (using Postman) to the following URL with the respective body:
+To use this API you just need to send a POST request (using Postman) to the following URL with the respective body.
 
 ### Last satellite location 
-API to get the last known latitude/longitude of the satellite for a given time:
+Request to get the last known latitude/longitude of the satellite for a given time:
 
 Endpoit:
 https://fi4k7gwr01.execute-api.us-east-2.amazonaws.com/starlink/satelliteposition
@@ -79,7 +79,7 @@ Response:
 
 [AWS Client](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
 
-After the installation you need to create a user and [configure the credentials](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html):
+After the installations you need to create an IAM user and [configure the credentials](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html):
 
 ```
 $ aws configure
@@ -89,7 +89,7 @@ Default region name [None]: us-east-2
 Default output format [None]: json
 ```
 
-You also need to attache the following permissions to this user to read/write data in the following services:
+You also need to attach the following read/write permissions to the user:
 
 ```
 S3
@@ -97,9 +97,9 @@ Secrets Manager
 RDS
 ```
 
-After that, you also need to store the raw data in a S3 bucket and create an empty Postgres database on RDS:
+After that, you need to store the raw data in a S3 bucket and create an empty Postgres database on RDS.
 
-Store variables on a `starlink-credentials` secret on Secrets Manager:
+Finally, store the following variables on a `starlink-credentials` secret on Secrets Manager:
 
 ```
 rds_user	database_user
