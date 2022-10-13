@@ -27,7 +27,7 @@ To use this API you just need to send a POST request (using Postman) to the foll
 Request to get the last known latitude/longitude of the satellite for a given time:
 
 Endpoit:
-https://fi4k7gwr01.execute-api.us-east-2.amazonaws.com/starlink/satelliteposition
+https://test-endpoint.execute-api.us-east-2.amazonaws.com/starlink/satelliteposition
 
 Body:
 ``` 
@@ -50,7 +50,7 @@ Response:
 API to find the closest satellite at a given time T, and a given a position on a globe as a (latitude, longitude) coordinate.
 
 Endpoit:
-https://fi4k7gwr01.execute-api.us-east-2.amazonaws.com/starlink/satelliteclosest
+https://test-endpoint.execute-api.us-east-2.amazonaws.com/starlink/satelliteclosest
 
 Body:
 ```
@@ -83,10 +83,10 @@ After the installations you need to create an IAM user and [configure the creden
 
 ```
 $ aws configure
-AWS Access Key ID [None]: AKIAIOSFODNN7EXAMPLE
-AWS Secret Access Key [None]: wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
-Default region name [None]: us-east-2
-Default output format [None]: json
+AWS Access Key ID [None]: 
+AWS Secret Access Key [None]: 
+Default region name [None]: 
+Default output format [None]:
 ```
 
 You also need to attach the following read/write permissions to the user:
